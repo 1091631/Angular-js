@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<script src="angular.min.js"></script>
+
+</head>
+<div ng-controller="myController">
+<div> 
+     First Name :{{employee.firstName}}
+</div>
+<div> 
+     Last Name :{{employee.lastName}}
+</div
+<div> 
+   Gender:{{employee.gender}}
+</div>
+<script>
+var myApp = angular.module("myModule", []);
+
+myApp.controller("myController", function ($scope){
+var employee = {
+    firstName: "Harshita",
+    lastName: "kudchi",
+    gender: "Female"
+};
+$scope.employee=employee
+});
+</script>
+
+</body>
+</html>
